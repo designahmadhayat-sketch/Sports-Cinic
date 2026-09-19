@@ -7,10 +7,11 @@ const LOCAL_INQUIRIES_KEY = 'dr_waqas_local_inquiries';
 
 // Strict authorized administrator accounts allowed access to the admin portal
 const AUTHORIZED_ADMIN_CREDENTIALS: Record<string, string[]> = {
-  'design.ahmadhayat@gmail.com': ['Admin@DrIftikhar2026!', 'dr.iftikhar1122', 'Admin@SPORC2026!', 'sporc1122', 'Admin@DrIrfan2026!', 'dr.irfan1122'],
-  'iftikharali@gmail.com': ['dr.iftikhar1122', 'Admin@DrIftikhar2026!', 'sporc1122'],
-  'sporcclinic.pk@gmail.com': ['sporc1122', 'Admin@SPORC2026!'],
-  'info@sporcclinic.pk': ['sporc1122', 'Admin@SPORC2026!'],
+  'design.ahmadhayat@gmail.com': ['dr.tariq1212', 'Admin@DrIftikhar2026!', 'dr.iftikhar1122', 'Admin@SPORC2026!', 'sporc1122', 'Admin@DrIrfan2026!', 'dr.irfan1122'],
+  'iftikharali@gmail.com': ['dr.tariq1212', 'dr.iftikhar1122', 'Admin@DrIftikhar2026!', 'sporc1122'],
+  'drtariq@gmail.com': ['dr.tariq1212', 'Admin@SPORC2026!', 'sporc1122'],
+  'sporcclinic.pk@gmail.com': ['dr.tariq1212', 'sporc1122', 'Admin@SPORC2026!'],
+  'info@sporcclinic.pk': ['dr.tariq1212', 'sporc1122', 'Admin@SPORC2026!'],
 };
 
 // Validate appointment object integrity - all booked patient appointments are retained at all times
@@ -661,16 +662,19 @@ export const api = {
     const deviceId = getClientDeviceId();
 
     const fallbackOneTimeLogin = () => {
+      const lower = trimmed.toLowerCase();
       if (
-        trimmed.toLowerCase() === 'sporc1212' || 
-        trimmed.toLowerCase() === 'iftikhar1122' || 
-        trimmed.toLowerCase() === 'sporc2026' ||
-        trimmed.toLowerCase() === 'irfan1212'
+        lower === 'dr.tariq1212' ||
+        lower === 'drtariq1212' ||
+        lower === 'sporc1212' || 
+        lower === 'iftikhar1122' || 
+        lower === 'sporc2026' ||
+        lower === 'irfan1212'
       ) {
         const token = 'adm-ota-' + Math.random().toString(36).substring(2, 12);
         const admin: AdminUser = {
           email: 'info@sporcclinic.pk',
-          name: 'Dr. Iftikhar Ali (Quick Admin Access)',
+          name: lower.includes('tariq') ? 'Dr. Tariq (Quick Admin Access)' : 'Dr. Iftikhar Ali (Quick Admin Access)',
           role: 'admin',
           clinic: 'SPORC Clinic Rawalpindi',
           isOneTimeSession: true,

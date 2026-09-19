@@ -134,8 +134,8 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
       return;
     }
 
-    // Valid quick access passcodes: sporc1212, iftikhar1122, sporc2026, irfan1212
-    const validPasscodes = ['sporc1212', 'iftikhar1122', 'sporc2026', 'irfan1212', 'irfanchandia1122'];
+    // Valid quick access passcodes: dr.tariq1212, sporc1212, iftikhar1122, sporc2026, irfan1212
+    const validPasscodes = ['dr.tariq1212', 'drtariq1212', 'sporc1212', 'iftikhar1122', 'sporc2026', 'irfan1212', 'irfanchandia1122'];
     if (!validPasscodes.includes(trimmedPass.toLowerCase())) {
       setErrorMsg('Invalid quick access passcode. Please verify the code provided by Dr. Iftikhar Ali.');
       return;

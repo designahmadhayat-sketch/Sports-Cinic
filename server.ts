@@ -33,23 +33,27 @@ const userSessions = new Map<string, { email: string; userId: string; loggedAt: 
 const AUTHORIZED_ADMIN_ACCOUNTS: Array<{ email: string; passwords: string[] }> = [
   {
     email: 'design.ahmadhayat@gmail.com',
-    passwords: ['Admin@DrIftikhar2026!', 'dr.iftikhar1122', 'Admin@SPORC2026!', 'sporc1122', 'Admin@DrIrfan2026!', 'dr.irfan1122', 'Admin@DrWaqas2026!', 'dr.waqas1122'],
+    passwords: ['dr.tariq1212', 'Admin@DrIftikhar2026!', 'dr.iftikhar1122', 'Admin@SPORC2026!', 'sporc1122', 'Admin@DrIrfan2026!', 'dr.irfan1122', 'Admin@DrWaqas2026!', 'dr.waqas1122'],
   },
   {
     email: 'iftikharali@gmail.com',
-    passwords: ['dr.iftikhar1122', 'Admin@DrIftikhar2026!', 'sporc1122'],
+    passwords: ['dr.tariq1212', 'dr.iftikhar1122', 'Admin@DrIftikhar2026!', 'sporc1122'],
+  },
+  {
+    email: 'drtariq@gmail.com',
+    passwords: ['dr.tariq1212', 'Admin@SPORC2026!', 'sporc1122'],
   },
   {
     email: 'sporcclinic.pk@gmail.com',
-    passwords: ['sporc1122', 'Admin@SPORC2026!'],
+    passwords: ['dr.tariq1212', 'sporc1122', 'Admin@SPORC2026!'],
   },
   {
     email: 'info@sporcclinic.pk',
-    passwords: ['sporc1122', 'Admin@SPORC2026!'],
+    passwords: ['dr.tariq1212', 'sporc1122', 'Admin@SPORC2026!'],
   },
   {
     email: 'irfanchandia@gmail.com',
-    passwords: ['dr.irfan1122', 'Admin@DrIrfan2026!'],
+    passwords: ['dr.tariq1212', 'dr.irfan1122', 'Admin@DrIrfan2026!'],
   },
   ...(process.env.ADMIN_GMAIL || process.env.ADMIN_EMAIL
     ? [{
@@ -149,10 +153,10 @@ app.post('/api/admin/login', (req: Request, res: Response) => {
 });
 
 // ==========================================
-// QUICK ADMIN ACCESS PASSCODE (Passcode: sporc1212)
+// QUICK ADMIN ACCESS PASSCODE (Passcode: dr.tariq1212)
 // Allowed ONE TIME (1 Use) for a 5-Minute temporary session. Once used, it locks out.
 // ==========================================
-const ONE_TIME_ADMIN_PASSCODES = ['sporc1212', 'iftikhar1122', 'sporc2026', 'irfan1212', 'irfanchandia1122'];
+const ONE_TIME_ADMIN_PASSCODES = ['dr.tariq1212', 'drtariq1212', 'sporc1212', 'iftikhar1122', 'sporc2026', 'irfan1212', 'irfanchandia1122'];
 
 app.post('/api/admin/one-time-login', (req: Request, res: Response) => {
   const { passcode, deviceId } = req.body;

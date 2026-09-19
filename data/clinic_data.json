@@ -1,7 +1,15 @@
 {
   "appointments": [],
   "users": [],
-  "activityLogs": [],
+  "activityLogs": [
+    {
+      "type": "user_registered",
+      "action": "One-Time Admin Passcode Redeemed (5-Minute Session Started)",
+      "details": "One-time access passcode redeemed by device (test-device-ver...) from IP: 127.0.0.1. Single-use 5-minute session initiated. Code is now permanently locked for this device.",
+      "id": "act-aptq4-846",
+      "timestamp": "2026-09-19T11:20:10.684Z"
+    }
+  ],
   "feedback": [
     {
       "id": "fb-001",

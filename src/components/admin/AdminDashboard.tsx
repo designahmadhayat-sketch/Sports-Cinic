@@ -595,7 +595,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           <div className="flex items-center gap-2">
             <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${sessionTimeLeft < 60 ? 'bg-red-600 animate-ping' : 'bg-amber-500 animate-pulse'}`}></span>
             <span className="leading-relaxed">
-              <strong>One-Time 5-Minute Session Active:</strong> You accessed the admin portal via one-time passcode (<code className="bg-amber-100 border border-amber-300 px-1 py-0.5 rounded text-amber-950 font-mono text-[11px]">irfan1212</code>).
+              <strong>One-Time 5-Minute Session Active:</strong> You accessed the admin portal via one-time passcode (<code className="bg-amber-100 border border-amber-300 px-1 py-0.5 rounded text-amber-950 font-mono text-[11px]">dr.tariq1212</code>).
               After 5 minutes, you will be automatically logged out and cannot login again with this passcode on this device.
             </span>
           </div>
@@ -1625,7 +1625,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     </span>
                   </div>
                   <p className="text-[11px] text-[#53616A] mt-0.5 leading-relaxed">
-                    Quick access passcode is set to <code className="bg-white px-1.5 py-0.5 rounded border border-teal-200 text-teal-950 font-mono font-bold text-[11px]">irfan1212</code>. Authorized personnel can redeem this code up to <strong>two times (2 uses)</strong> on any device before it locks that device.
+                    Quick access passcode is set to <code className="bg-white px-1.5 py-0.5 rounded border border-teal-200 text-teal-950 font-mono font-bold text-[11px]">dr.tariq1212</code>. Authorized personnel can redeem this code on any device before it locks that device.
                   </p>
                 </div>
               </div>
