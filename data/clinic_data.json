@@ -1,0 +1,57 @@
+{
+  "appointments": [],
+  "users": [],
+  "activityLogs": [],
+  "feedback": [
+    {
+      "id": "fb-001",
+      "patientName": "Muhammad Rizwan",
+      "rating": 5,
+      "category": "Sports Injury & ACL Rehab",
+      "comment": "Dr. Iftikhar Ali provided exceptional care for my knee ligament tear. The targeted physical therapy and strengthening helped me get back on the field.",
+      "createdAt": "2026-08-25T10:00:00.000Z"
+    },
+    {
+      "id": "fb-002",
+      "patientName": "Chaudhry Kamran",
+      "rating": 5,
+      "category": "Sciatica & Disc Decompression",
+      "comment": "Suffered from excruciating lower back and leg pain for months. After manual therapy and spine decompression at SPORC Clinic on Murree Road, I am completely pain-free.",
+      "createdAt": "2026-08-29T11:30:00.000Z"
+    },
+    {
+      "id": "fb-003",
+      "patientName": "Malik Zeeshan",
+      "rating": 5,
+      "category": "Knee Osteoarthritis Program",
+      "comment": "My mother was unable to walk due to severe knee osteoarthritis. Dr. Iftikhar Ali's rehabilitation plan improved her mobility tremendously without surgery.",
+      "createdAt": "2026-09-02T16:00:00.000Z"
+    },
+    {
+      "id": "fb-004",
+      "patientName": "Dr. Farhan Qureshi",
+      "rating": 5,
+      "category": "Frozen Shoulder Mobilization",
+      "comment": "Regained 100% range of motion in my left shoulder after 6 sessions of manual therapy and therapeutic exercises. Highly professional facility.",
+      "createdAt": "2026-09-05T14:40:00.000Z"
+    },
+    {
+      "id": "fb-005",
+      "patientName": "Noman Bashir",
+      "rating": 5,
+      "category": "Post-Surgical Rehabilitation",
+      "comment": "Excellent rehabilitation after my ankle surgery. State-of-the-art gym equipment and one-on-one attention from the physiotherapist.",
+      "createdAt": "2026-09-07T12:15:00.000Z"
+    },
+    {
+      "id": "fb-006",
+      "patientName": "Hamza Abbasi",
+      "rating": 5,
+      "category": "Neck & Cervical Spondylosis",
+      "comment": "Continuous desk work had caused severe cervical stiffness and headaches. The posture correction and cervical traction gave instant relief.",
+      "createdAt": "2026-09-09T09:20:00.000Z"
+    }
+  ],
+  "inquiries": [],
+  "oneTimeRedemptions": []
+}

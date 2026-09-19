@@ -1,0 +1,8 @@
+{
+  "name": "SPORC Clinic Rawalpindi",
+  "description": "Official clinic website for SPORC Clinic Rawalpindi (Sports & Orthopedic Rehabilitation Center), located opposite Benazir Bhutto Hospital on Murree Road, Rawalpindi. Specializing in sports injury rehabilitation, orthopedic physical therapy, spine pain relief, joint mobilization, and post-surgical recovery by Dr. Iftikhar Ali.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
